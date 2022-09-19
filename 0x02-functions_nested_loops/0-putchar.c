@@ -1,14 +1,20 @@
 #include "main.h"
-
 /**
-* print_alphabet - Prints out lowercase alphabet followed by a new line
-* Return: Returns null
-*/
-void print_alphabet(void)
+ * main - Entry point
+ * Description: prints '_putchar \n'
+ * Return: Always 0 (success)
+ */
+int main(void)
 {
-	char ch;
+char str[] = "_putchar\n";
+int i = 0;
 
-	for (ch = 'a'; ch <= 'z'; ch++)
-		_putchar(ch);
-	_putchar('\n');
+while (str[i] != '\0')
+	{
+	char c = str[i];
+
+	_putchar(c);
+	i++;
+	}
+return (0);
 }
