@@ -1,20 +1,14 @@
 #include "main.h"
 
 /**
-* main - prints out Holberton followed by a new line
-* Return: the function returns 0
+* print_alphabet - Prints out lowercase alphabet followed by a new line
+* Return: Returns null
 */
-int main(void)
+void print_alphabet(void)
 {
-	_putchar('H');
-	_putchar('o');
-	_putchar('l');
-	_putchar('b');
-	_putchar('e');
-	_putchar('r');
-	_putchar('t');
-	_putchar('o');
-	_putchar('n');
+	char ch;
+
+	for (ch = 'a'; ch <= 'z'; ch++)
+		_putchar(ch);
 	_putchar('\n');
-	return (0);
 }
